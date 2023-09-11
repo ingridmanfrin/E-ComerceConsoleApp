@@ -1,4 +1,5 @@
-﻿using System;
+﻿using E_Commerce.Model;
+using System;
 
 namespace E_Commerce
 {
@@ -8,7 +9,7 @@ namespace E_Commerce
         static void Main(string[] args)
         {
             int opcao = -1, id;
-            string nomeLoja = "Sofás Conforto";
+            string nomeLoja = "Conforto Móveis";
 
             while (opcao != 6)
             {
@@ -20,11 +21,11 @@ namespace E_Commerce
                 Console.WriteLine("                                                     ");
                 Console.WriteLine("*****************************************************");
                 Console.WriteLine("                                                     ");
-                Console.WriteLine("            1 - Cadastrar Produto                      ");
-                Console.WriteLine("            2 - Listar todos os Produtos               ");
-                Console.WriteLine("            3 - Consultar Produto                     ");
-                Console.WriteLine("            4 - Atualizar Produto                     ");
-                Console.WriteLine("            5 - Deletar Produto                       ");
+                Console.WriteLine("            1 - Cadastrar Mobília                      ");
+                Console.WriteLine("            2 - Listar todos as Mobílias               ");
+                Console.WriteLine("            3 - Consultar Mobília                     ");
+                Console.WriteLine("            4 - Atualizar Mobília                     ");
+                Console.WriteLine("            5 - Deletar Mobília                       ");
                 Console.WriteLine("            6 - Sair                                 ");
                 Console.WriteLine("                                                     ");
                 Console.WriteLine("*****************************************************");
@@ -38,7 +39,7 @@ namespace E_Commerce
                 {
                     case 1:
                         Console.ForegroundColor = ConsoleColor.Gray;
-                        Console.WriteLine("Criar Produto\n\n");
+                        Console.WriteLine("Cadastrar Mobília\n\n");
                         Console.ResetColor();
 
                         KeyPress();
@@ -46,7 +47,7 @@ namespace E_Commerce
 
                     case 2:
                         Console.ForegroundColor = ConsoleColor.Gray;
-                        Console.WriteLine("Listar Produtos\n\n");
+                        Console.WriteLine("Listar Mobília\n\n");
                         Console.ResetColor();
 
 
@@ -54,7 +55,7 @@ namespace E_Commerce
                         break;
                     case 3:
                         Console.ForegroundColor = ConsoleColor.Gray;
-                        Console.WriteLine("Consultar Produto - por Id\n\n");
+                        Console.WriteLine("Consultar Mobília - por Id\n\n");
                         Console.ResetColor();
 
 
@@ -62,7 +63,7 @@ namespace E_Commerce
                         break;
                     case 4:
                         Console.ForegroundColor = ConsoleColor.Gray;
-                        Console.WriteLine("Atualizar Produto\n\n");
+                        Console.WriteLine("Atualizar Mobília\n\n");
                         Console.ResetColor();
 
 
@@ -70,14 +71,14 @@ namespace E_Commerce
                         break;
                     case 5:
                         Console.ForegroundColor = ConsoleColor.Gray;
-                        Console.WriteLine("Apagar o Produto\n\n");
+                        Console.WriteLine("Deletar Mobília\n\n");
                         Console.ResetColor();
 
                         KeyPress();
                         break;
                     case 6:
                         Console.ForegroundColor = ConsoleColor.DarkGray;
-                        Console.WriteLine($"\nSofás Conforto - Aconchegue-se!");
+                        Console.WriteLine($"\nConforto Móveis - Móveis feitos para você!");
                         Sobre();
                         Console.ResetColor();
                         KeyPress();
