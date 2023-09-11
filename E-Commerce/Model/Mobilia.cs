@@ -12,9 +12,10 @@ namespace E_Commerce.Model
         private string nome;
         private decimal preco;
 
-        public Mobilia(int id, string nome, decimal preco)
+        public Mobilia(int id, int tipo, string nome, decimal preco)
         {
             this.id = id;
+            this.tipo = tipo;   
             this.nome = nome;
             this.preco = preco;
         }
@@ -29,6 +30,15 @@ namespace E_Commerce.Model
         public void SetId(int id)
         {
             this.id = id;
+        }
+        public int GetTipo()
+        {
+            return tipo;
+        }
+
+        public void SetTipo(int tipo)
+        {
+            this.tipo = tipo;
         }
 
         public string GetNome()

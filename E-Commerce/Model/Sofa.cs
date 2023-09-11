@@ -10,7 +10,7 @@ namespace E_Commerce.Model
     {
         private int quantidadeLugares;
 
-        public Sofa(int id, string nome, decimal preco, int quantidadeLugares) : base(id, nome, preco)
+        public Sofa(int id, int tipo, string nome, decimal preco, int quantidadeLugares) : base(id, tipo, nome, preco)
         {
             this.quantidadeLugares = quantidadeLugares;
         }

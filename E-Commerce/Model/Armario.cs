@@ -10,7 +10,7 @@ namespace E_Commerce.Model
     {
         private int quantidadePortas;
 
-        public Armario(int id, string nome, decimal preco, int quantidadePortas) : base(id, nome, preco)
+        public Armario(int id, int tipo, string nome, decimal preco, int quantidadePortas) : base(id, tipo, nome, preco)
         {
             this.quantidadePortas = quantidadePortas;
         }
